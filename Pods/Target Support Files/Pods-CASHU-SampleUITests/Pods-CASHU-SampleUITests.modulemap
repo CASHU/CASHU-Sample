@@ -1,0 +1,6 @@
+framework module Pods_CASHU_SampleUITests {
+  umbrella header "Pods-CASHU-SampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

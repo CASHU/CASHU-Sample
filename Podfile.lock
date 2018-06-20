@@ -1,0 +1,24 @@
+PODS:
+  - CASHU (1.0):
+    - CCMPopup
+    - SCrypto
+  - CCMPopup (1.1.0)
+  - SCrypto (3.0.2)
+
+DEPENDENCIES:
+  - CASHU
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CASHU
+    - CCMPopup
+    - SCrypto
+
+SPEC CHECKSUMS:
+  CASHU: 7189bc62b5036169e6ecfcd17c197a4e8eadcda5
+  CCMPopup: e41fad5b8a0823c9cddea8eab6d431670c9dabe5
+  SCrypto: 9cbc2fdf1e1ef0f28aa32e26e5460ccee59da4c1
+
+PODFILE CHECKSUM: 471628ca2d51aeacd32b6c3f03ae0687cd0c4e2c
+
+COCOAPODS: 1.5.0
