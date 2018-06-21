@@ -1,6 +1,0 @@
-framework module CASHU {
-  umbrella header "CASHU-umbrella.h"
-
-  export *
-  module * { export * }
-}
