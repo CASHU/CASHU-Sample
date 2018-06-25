@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import CASHU
 
 class Product: NSObject {
     var name = ""
     var priceText = ""
     var decimalPrice = 0.0
+    var currecy : Currency = .usd
 }

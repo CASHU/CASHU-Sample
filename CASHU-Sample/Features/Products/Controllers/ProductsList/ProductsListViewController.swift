@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CASHU
 
 class ProductsListViewController: UIViewController {
     
@@ -15,6 +16,9 @@ class ProductsListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let configurationsButton = UIBarButtonItem(image: UIImage(named: "config"), style: .plain, target: self, action: #selector(self.openConfigurations(_:)))
+        navigationItem.rightBarButtonItem = configurationsButton
         
         productsTableView.rowHeight = UITableViewAutomaticDimension
         productsTableView.estimatedRowHeight = 96
@@ -35,18 +39,21 @@ class ProductsListViewController: UIViewController {
     func configureData(){
         let product = Product()
         product.name = "Transformer"
-        product.priceText = "1000$"
+        product.priceText = "1000 $"
         product.decimalPrice = 1000
+        product.currecy = .usd
         productList.append(product)
         let product2 = Product()
         product2.name = "Puppet"
-        product2.priceText = "1$"
+        product2.priceText = "1 AED"
         product2.decimalPrice = 1
+        product.currecy = .aed
         productList.append(product2)
         let product3 = Product()
         product3.name = "Pokemon"
-        product3.priceText = "2$"
+        product3.priceText = "2 $"
         product3.decimalPrice = 2
+        product.currecy = .usd
         productList.append(product3)
         
         self.productsTableView.reloadData()
@@ -59,6 +66,10 @@ class ProductsListViewController: UIViewController {
             }
             
         }
+    }
+    
+    @IBAction func openConfigurations(_ sender: UIButton) {
+        CASHUServices.initiateTestingConfigurationsInParent(self)
     }
 }
 
