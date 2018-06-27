@@ -1,5 +1,5 @@
 PODS:
-  - CASHU (1.2):
+  - CASHU (1.3):
     - CCMPopup
     - SCrypto
   - CCMPopup (1.1.0)
@@ -15,7 +15,7 @@ SPEC REPOS:
     - SCrypto
 
 SPEC CHECKSUMS:
-  CASHU: ab0c3edf6bd182d74ae7dcf5ef1413105dee34ea
+  CASHU: ddcd26f3ca192053e845e17adfe5ea3e5096f762
   CCMPopup: e41fad5b8a0823c9cddea8eab6d431670c9dabe5
   SCrypto: 9cbc2fdf1e1ef0f28aa32e26e5460ccee59da4c1
 

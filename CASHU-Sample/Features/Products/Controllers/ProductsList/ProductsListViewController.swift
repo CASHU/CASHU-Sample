@@ -47,13 +47,13 @@ class ProductsListViewController: UIViewController {
         product2.name = "Puppet"
         product2.priceText = "1 AED"
         product2.decimalPrice = 1
-        product.currecy = .aed
+        product2.currecy = .aed
         productList.append(product2)
         let product3 = Product()
         product3.name = "Pokemon"
         product3.priceText = "2 $"
         product3.decimalPrice = 2
-        product.currecy = .usd
+        product3.currecy = .usd
         productList.append(product3)
         
         self.productsTableView.reloadData()
