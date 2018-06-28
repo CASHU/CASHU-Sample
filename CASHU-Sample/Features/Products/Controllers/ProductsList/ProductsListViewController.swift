@@ -38,23 +38,35 @@ class ProductsListViewController: UIViewController {
     
     func configureData(){
         let product = Product()
-        product.name = "Transformer"
-        product.priceText = "1000 $"
-        product.decimalPrice = 1000
+        product.name = "Pokemon"
+        product.priceText = "2 $"
+        product.decimalPrice = 2
         product.currecy = .usd
         productList.append(product)
         let product2 = Product()
-        product2.name = "Puppet"
-        product2.priceText = "1 AED"
-        product2.decimalPrice = 1
-        product2.currecy = .aed
+        product2.name = "Transformer"
+        product2.priceText = "1000 $"
+        product2.decimalPrice = 1000
+        product2.currecy = .usd
         productList.append(product2)
         let product3 = Product()
-        product3.name = "Pokemon"
-        product3.priceText = "2 $"
-        product3.decimalPrice = 2
-        product3.currecy = .usd
+        product3.name = "Puppet"
+        product3.priceText = "1 AED"
+        product3.decimalPrice = 1
+        product3.currecy = .aed
         productList.append(product3)
+        let product4 = Product()
+        product4.name = "Puppet Collection"
+        product4.priceText = "10 AED"
+        product4.decimalPrice = 10
+        product4.currecy = .aed
+        productList.append(product4)
+        let product5 = Product()
+        product5.name = "Car"
+        product5.priceText = "1000 AED"
+        product5.decimalPrice = 1000
+        product5.currecy = .aed
+        productList.append(product5)
         
         self.productsTableView.reloadData()
     }

@@ -100,11 +100,11 @@ extension PaymentMethodsViewController: UITableViewDataSource, UITableViewDelega
 }
 
 extension PaymentMethodsViewController : CASHUServicesDelegate{
-    func didFinishPaymentSuccessfullyWithReferenceID(referenceID: String) {
+    func didFinishPaymentSuccessfullyWithReferenceID(referenceID: String, productDetails: ProductDetails) {
         self.navigationController?.popViewController(animated: true)
     }
     
-    func didFailPaymentWithReferenceID(referenceID: String) {
-        
+    func didFailPaymentWithReferenceID(referenceID: String, productDetails: ProductDetails) {
+
     }
 }
